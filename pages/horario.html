@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p4_clase_gráfica_publicitaria</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            overflow: hidden;
+        }
+        h1{
+            font-family: 'Space Mono', monospace;
+            font-weight: 800;
+        }
+        header, nav, h2, footer{
+            font-family: 'Lekton', sans-serif; 
+        }
+        nav a{
+            font-weight: 800;
+        }
+        main h2{
+            font-weight: 400;
+        }
+        footer address, footer a{
+            font-weight: 400;
+            font-style: normal;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 150px;
+            background-color: #00779C;
+            color: white;
+            height: 16.66vh;
+            font-size: 2.3em;
+        }
+        /*NAV*/
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #7C37A7;
+            color: white;
+            height: 8.33vh;
+            font-size: 1em;
+        }
+        nav a{
+            color: #FFC700;
+            display: flex;
+            flex-direction: row;
+            width: 80px;
+            font-size: 1.2em;
+            justify-content: center;
+            align-items: center;
+            font-weight: 200;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            height: 66.6vh;
+        }
+        /*FOOTER*/
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #00779C;
+            color: white;
+            height: 8.33vh;
+        }
+        footer a{
+            color: white;
+        }
+        footer address{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header, main, nav, footer{
+            padding: 0 150px;
+        }
+        th{
+            font-family: 'Lekton', sans-serif;
+            font-weight: bold;
+            padding: 50 50px;
+            justify-content: center;
+            align-items: center;
+            word-spacing: 20px;
+            color: #FFC700;
+        }
+        td{
+            font-family: 'Lekton', sans-serif;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            display: flex;
+            flex-direction: row;
+            background-color: #7C37A7;
+            color: white;
+            width: 60%;
+            margin-top: 20px;
+        }
+        #horas td{
+            font-size: 0.7em;
+        }
+        td{
+            text-align: center;
+            padding: 0.3em 0;
+        }
+        th{
+            text-align: left;
+            padding: 0.5em 0;
+        }
+        td:hover{
+            background-color: #FFC700;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>¡Visítanos en la EASD Alcoy! No te arrepentirás x.x</p>
+    </header>
+    <nav>
+        <a href="../index.html">index</a>
+        <a href="#">
+            <img src="../img/Group 1.svg" alt="logo">
+        </a>
+        <a href="../pages/clase.html">la clase</a>
+    </nav>
+    <main>
+    <h1>Horario</h1>
+    <table>
+        <tr>
+            <th>sesiones</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>descanso</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+        </tr>
+        <tr id="horas">
+            <th>horas</th>
+            <td>8:00 - 8:50</td>
+            <td>8:50 - 9:40</td>
+            <td>9:40 - 10:30</td>
+            <td>descanso</td>
+            <td>11:00 - 11:50</td>
+            <td>11:50 - 12:40</td>
+            <td>12:40 - 13:30</td>
+            <td>13:30 - 14:20</td>
+            <td>14:20 - 15:10</td>
+        </tr>
+        <tr>
+            <th>LU</th>
+            <td>Historia</td>
+            <td colspan="2">RIA</td>
+            <td></td>
+            <td>RIA</td>
+            <td colspan="2">Proyectos</td>
+            <td colspan="2">Fotografía</td>
+        </tr>
+        <tr>
+            <th>MT</th>
+            <td colspan="3">RIA</td>
+            <td></td>
+            <td colspan="2">Inglés</td>
+            <td colspan="2">Proyecto Integrado</td>
+        </tr>
+        <tr>
+            <th>MX</th>
+            <td colspan="2">Historia</td>
+            <td>Proyectos</td>
+            <td></td>
+            <td colspan="2">Proyectos</td>
+            <td colspan="2">Proyecto Integrado</td>
+        </tr>
+        <tr>
+            <th>JU</th>
+            <td colspan="2">Marketing</td>
+            <td>Empresa</td>
+            <td></td>
+            <td>Empresa</td>
+            <td colspan="2">Fotografía</td>
+            <td colspan="2">Proyectos</td>
+        </tr>
+        <tr>
+            <th>VI</th>
+            <td colspan="3">Tipografía</td>
+            <td></td>
+            <td colspan="2">Proyectos</td>
+            <td colspan="2">Marketing</td>
+        </tr>
+    </table>
+</main>
+<footer>
+    <address>
+        C/Barranc de Na Lloba, s/n, Alcoy - Alicante<br>
+        <a href="http://www.easdalcoi.es/es/">easdalcoi.es</a>
+    </address>
+</footer>
+</body>
+</html>

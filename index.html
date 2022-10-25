@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p4_clase_gráfica_publicitaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            overflow: hidden;
+        }
+        h1{
+            font-family: 'Space Mono', monospace;
+            margin-top: -0.2em;
+        }
+        header, nav, h2, footer{
+            font-family: 'Lekton', sans-serif; 
+        }
+        main h2{
+            font-weight: 400;
+            font-size: 1.03em;
+            margin: -0.2em;
+        }
+        footer address, footer a{
+            font-weight: 400;
+            font-style: normal;
+        /*HEADER*/
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 150px;
+            background-color: #00779C;
+            color: white;
+            height: 16.66vh;
+            font-size: 2.3em;
+        }
+        /*NAV*/
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #7C37A7;
+            color: white;
+            height: 8.33vh;
+        }
+        nav a{
+            color: #FFC700;
+            display: flex;
+            flex-direction: row;
+            width: 80px;
+            font-size: 1.2em;
+            justify-content: center;
+            align-items: center;
+        }
+        nav a img{
+            background-color: #7C37A7;
+            width: auto;
+            height: auto;
+        }
+        a{
+            width: 60px;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        /*MAIN*/
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            height: 66.6vh;
+        }
+        main hgroup{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        /*FOOTER*/
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #00779C;
+            color: white;
+            height: 8.33vh;
+        }
+        footer a{
+            color: white;
+        }
+        footer address{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header, main, nav, footer{
+            padding: 0 150px;
+        }
+        main{
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>¡Visítanos en la EASD Alcoy! No te arrepentirás x.x</p>
+    </header>
+    <nav>
+        <a href="../pages/clase.html">la clase</a>
+        <a href="#">
+            <img src="../img/Group 1.svg" alt="logo">
+        </a>
+        <a href="../pages/horario.html">horario</a>
+    </nav>
+    <main>
+        <hgroup>
+            <h1>2022/2023</h1>
+            <h1>Gráfica Publicitaria</h1>
+        </hgroup>
+        <h2>Escuela de Arte y Superior de Diseño de Alcoy</h2>
+    </main>
+</body>
+<footer>
+    <address>
+        C/Barranc de Na Lloba, s/n, Alcoy - Alicante<br>
+        <a href="http://www.easdalcoi.es/es/">easdalcoi.es</a>
+    </address>
+</footer>
+</html>
